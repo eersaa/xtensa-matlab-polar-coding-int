@@ -12,14 +12,12 @@
 #define PENCODE_CORE_H
 
 // Include Files
-#include "rtwtypes.h"
 #include <cstddef>
 #include <cstdlib>
-#include <mc_scverify.h>
 
 // Function Declarations
 #pragma hls_design top
-void CCS_BLOCK(pencode_core)(const bool d[128], bool x[128]);
+void pencode_core(const bool d[128], bool x[128]);
 
 #endif
 //

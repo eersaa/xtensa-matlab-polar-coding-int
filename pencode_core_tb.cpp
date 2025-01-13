@@ -1,4 +1,5 @@
 #include "pencode_core.h"
+#include "defs.h"
 
 #include <iostream>
 #include <fstream>
@@ -18,7 +19,7 @@ int main(int argc, char *argv[])
     		#include "reference_output.txt"
     		};
 
-    run(data_in, data_out);
+    pencode_core(data_in, data_out);
 
     bool mismatch = false;
     for (int i = 0; i < block_length; i++)

@@ -17,7 +17,7 @@
 //                boolean_T x[128]
 // Return Type  : void
 //
-void CCS_BLOCK(pencode_core)(const bool d[128], bool x[128])
+void pencode_core(const bool d[128], bool x[128])
 {
   for (int i{0}; i < 128; i++) {
     x[i] = d[i];
